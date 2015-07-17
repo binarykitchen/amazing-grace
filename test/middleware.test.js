@@ -153,8 +153,10 @@ test('middleware:', function(t) {
 
                     while (j > 0) {
                         doRequest(100, function(err, res) {
-                            t.equal(err.code, 'ECONNRESET', 'ECONNRESET is thrown')
-                            t.notOk(res, 'res is undefined')
+                            if (err) {
+                                t.equal(err.code, 'ECONNRESET', 'ECONNRESET is thrown')
+                                t.notOk(res, 'res is undefined')
+                            }
                         })
                         j--
                     }
