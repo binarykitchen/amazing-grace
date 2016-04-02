@@ -12,8 +12,7 @@ var log = DEBUG ? console.log : function() {}
 app.use(amazingGrace(server, {log: log, timeout: 50}))
 
 app.get('/test', function(req, res) {
-
-    var delay = req.params.delay ? req.params.delay : 30
+    var delay = req.query.delay ? req.query.delay : 30
 
     log('GET /test', delay)
 

@@ -14,7 +14,6 @@
   },
   "readmeFilename": "README.md",
   "scripts": {
-    "postinstall": "npm prune",
     "test": "tape test/*.js"
   },
   "engines": {
@@ -28,8 +27,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "express": "4.13.1",
+    "express": "4.13.4",
     "superagent": "1.2.0",
-    "tape": "4.0.0"
+    "tape": "4.5.1"
   }
 }

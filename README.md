@@ -36,10 +36,15 @@ app.use(amazingGrace(server, {log: console.log, timeout: 50}))
 
 Default: none
 
-If you wish more debug information, you can pass on the function directly i.E. `console.log` or even `bunyan.info`, whatever log level you wish.
+If you wish more debug information, you can pass on the log function directly i.E. `console.log` or even `bunyan.info.bind(bunyan)`, whatever log level you wish. Use of bind() is recommended.
 
 ### timeout
 
 Default: 100ms
 
 Depending on your app performance you might want to increase that to make sure no data loss occurs between restarts.
+
+## License
+
+MIT. Copyright (C) [Michael Heuberger](https://binarykitchen.com)
+
