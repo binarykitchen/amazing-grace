@@ -1,6 +1,6 @@
 {
   "name": "amazing-grace",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny ExpressJS middleware for a sweet, graceful shutdown procedure",
   "main": "index.js",
   "author": {
