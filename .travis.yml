@@ -1,8 +1,9 @@
 language: node_js
-deploy:
-  provider: npm
-  email: michael.heuberger@binarykitchen.com
-  api_key:
-    secure: yqhf9xAwyr3xPQUu+ycISQwv1TaGeWLOTv8YjhoTgGJSZm9O7XYwxyPUkurxI0aqHHsw/dXshHdOC0Nqz3EtNzHJkCK7BpsMiMBKOrR54ykSI84a0SKKQe2R5mZPusxavcDxOOg0ju4ZVCfhsjNfPcFc65tdW5vz/esbHf/MZiw=
-  on:
-    repo: binarykitchen/amazing-grace
+node_js:
+  - 8
+  - 10
+  - 11
+notifications:
+  email:
+    on_success: never
+    on_failure: always
